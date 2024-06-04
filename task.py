@@ -12,7 +12,7 @@ def list_tasks():
 def add_task(task):
         tasks.append({"task": task, "completed": False})
 def remove_task(index):
-    if 0 >= index < len(tasks):
+    if 0 <= index < len(tasks):
         tasks.pop(index)
     else:
         print("Índice inválido")
