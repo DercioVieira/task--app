@@ -10,7 +10,7 @@ def list_tasks():
         status = "Concluída" if task["completed"] else "Não Concluída"
         print(f"{i + 1}. {task['task']} [{status}]")
 def add_task(task):
-    tasks.append({"task": task, "completed": False})
+        tasks.append({"task": task, "completed": False})
 
 def main():
     while True:
